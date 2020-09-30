@@ -1,0 +1,196 @@
+
+body{
+    background-color: rgb(129, 129, 129);
+}
+
+
+#menu{
+    background-color: black;
+    padding: 12px;
+    width: 66%;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu{
+
+    text-decoration: none;
+    color: #ddd;
+    background-color: #222;
+    padding: 12px;
+    font-size: x-large;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: right;
+    transition: color, filter 0.4s;
+}
+.menu:hover{
+    color: white;
+    filter: brightness(160%);
+}
+#band_Saw_Picture{
+    width: 40%;
+    height: 20%;
+    transition: filter 0.5s;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: -140px;
+}
+#BandSaw{
+    width:45%;
+    color: white;
+    padding: 20px;
+    font-size: large;
+}
+span{
+    padding-left: 4.5%;
+}
+#tools{
+    margin-top: 400px;
+    background-color: #222;
+}
+#a{
+    display: inline;
+}
+#band_Saw_Picture:hover{
+    filter: brightness(150%)
+}
+h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+h2{
+    font-family: 'Merriweather', serif;
+    font-size: larger;
+    color: rgb(192, 192, 192);
+    position: absolute;
+    top: 190px;
+    left: 200px;
+}
+#list{
+    position: absolute;
+    top: 290px;
+    left: 300px;
+    color: whitesmoke;
+    font-size: larger;
+    font-family: "David Libre";
+}
+#disc_Sander_Picture{
+    cursor: pointer;
+    transition: filter 0.5s;
+    margin-right: 80px;
+    margin-top: -1300px;
+}
+#disc_Sander_Picture:hover{
+    filter: brightness(150%);
+}
+#DiscSander{
+    position: absolute;
+    width: 30%;
+    right: 40px;
+    font-size: large;
+    padding: 20px;
+    color: white;
+    bottom: -718px
+}
+#disc_Sander{
+    margin-left: 20px;
+    margin-top: -140px;
+}
+#drill_Press_Picture{
+    width: 40%;
+    transition: filter 0.5s;
+    cursor: pointer;
+}
+#drill_Press{
+    padding-top: 190px;
+}
+#drill_Press_Picture:hover{
+    filter: brightness(150%)
+}
+#DrillPress{
+    width:45%;
+    color: white;
+    padding: 20px;
+    font-size: large;
+}
+#silverV{
+    border-left: 6px solid silver;
+    height: 1665px;
+    position: absolute;
+    left: 665px;
+    top: 705px;
+}
+hr{
+    border-top: 6px solid silver;
+    position: absolute;
+    top: 1500px;
+    width: 98.69%
+}
+ul{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#general p{
+    color: white;
+    font-size: x-large;
+}
+#general{
+    padding: 20px;
+    padding-left: 470px;
+    
+}
+.names{
+    text-decoration: none;
+    color: #222;
+    font-size: x-large;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+.names:hover{
+    filter: brightness(11300%)
+}
+.popup{
+    font-size: x-large;
+    color: white;
+    position: absolute;
+    width: 355px;
+    background-color: #111;
+    text-align: center;
+    height: 60px;
+    bottom: -260px;
+    opacity: 0.9;
+    margin-left: 7.5px;
+    font-family: sans-serif;
+    filter: brightness(150%)
+}
+#popupDrillPress{
+    position: absolute;
+    bottom: -1300px;
+}
+#oscillating_Spindle_Sanders_Picture{
+    width: 93%;
+    margin-top: 140px;
+    cursor: pointer;
+    transition: filter 0.5s;
+
+}
+#oscillating_Spindle_Sanders_Picture:hover{
+    filter: brightness(150%);
+}
+#popupOscillatingSpindleSander{
+    bottom: -1300px;
+    margin-left: 50px;
+}
+#OSS{
+    width:85%;
+    color: white;
+    padding: 20px;
+    font-size: large;
+}

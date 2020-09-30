@@ -1,0 +1,71 @@
+body{
+    background-color: #222;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+.images{
+    background-color: #333;
+    width: 370px;
+    height: 195px;
+    margin: 10px;
+    position: relative;
+}
+#container1{
+    display: flex;
+    justify-content: center;
+}
+#container2{
+    display: flex;
+    justify-content: center;
+}
+#scraper{
+    cursor: pointer;
+    margin: 7.5px;
+    width: 355px;
+    height: 180px;
+    transition: 1s;
+}
+#bbq{
+    font-size: x-large;
+    color: white;
+    position: absolute;
+    width: 355px;
+    background-color: black;
+    text-align: center;
+    height: 60px;
+    bottom: -16px;
+    opacity: 0.8;
+    margin-left: 7.5px;
+    font-family: sans-serif;
+}
+h3{
+    color: silver;
+    font-family: 'Merriweather', serif;
+}
+#h3{
+    display: flex;
+}
+h3:nth-child(1){
+    margin-left: 700px;
+}
+h3:nth-child(2){
+    margin-left: 100px;
+}
+#bbq:hover{
+    cursor: pointer;
+}
+#explanation{
+    color: #4ad6f4;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    font-size: large;
+
+}
+span{
+    padding-left: 30px;
+}

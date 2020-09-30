@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bbqTools.css">
+    <title>Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <a class="menu" href="index1.html">Home</a>
+        <a class="menu" href="bbq.html">BBQ Scraper</a>
+        <a class="menu" href="bbqSteps.html">Steps</a>
+        <a class="menu" href="#">Final Design</a>
+    </div>
+    <h1>BBQ Scraper</h1>
+    <h2>Safety and Tools</h2>
+    <p id="list">I have used multiple tools for the Barbeque Scraper. Which include  the:<br><br> <a id="a" href="#band_Saw_Picture" class="names">Band Saw</a>, <a href="#oscillating_Spindle_Sanders" class="names"> Oscillating Spindle Sander</a>, <a href="#drill_Press_Picture" class="names"> Drill Spress.</a></p>
+    <div id="silverV"></div>
+    <div id="tools">
+        <table>
+            <tr>
+                <td>
+                    <div id="general">
+                        <p>Safety in all machines:</p>
+                        <ul>
+                            <li>
+                                Eye protection must be used when operating machines,
+                            </li>
+                            <li>
+                                Complete attention must be directed at the machines,
+                            </li>
+                            <li>
+                                Long hair must be tied back,
+                            </li>
+                            <li>
+                                Jewelry must be taken off when entering woodshop,
+                            </li>
+                            <li>
+                                Only operate machines under the teacher's permission
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <div id="band_Saw" class="tool">
+                    <img src="band saw.webp" id="band_Saw_Picture">
+                    <p id="popupBandSaw" class="popup">Band Saw</p>
+                    <p id="BandSaw"><span id="span1">A</span> bandsaw is a power saw with long sharp blade consisting of many metal teeth. 
+                        The band saw is mainly used in woodworking and metalworking. 
+                        The purpose of a band saw is to cut out shapes in wood, plastic, or metal.
+                        One of its advantages over other saws is its ability to cut out irregular or curved sides and shapes.
+                        <br><br><span id="span2">When </span>using the bandsaw it is important to keep your fingers at least 50mm away from the blade and stand in front of the blade.
+                        Adjust the top of the blade approximately 6 mm above the material to be cut and always cut on the waste side of the line.
+                        When removing small scrap pieces all use a wooden stick.
+                    </p>
+                </div>
+            </td>
+            <td>
+                <div id="disc_Sander" class="tool">
+                    <img id="disc_Sander_Picture" src="Disk Sander.png">
+                    <p id="popupDiscSander" class="popup">Disc Sander</p>
+                    <p id="DiscSander"><span id="span3">D</span>isk sanders are prefabricated disks of sand paper.
+                        The Disk Sander is used to smooth materials such as woods and plastics.
+                        It is also used to remove small amounts of waste material.<br><br>
+                        <span id="span4">When</span> using the disc sander remove all saw dust and only sand on dry wood.
+                        Also always sand on the <i>rotating-down side surface</i> of the sander and never sand if the abrasive paper is loose or torn.
+                        Keep your fingers at least four inches away from the sander and do not push the material too hard against the machine.
+                        The wood must be positioned against the table at all times when using the machine.
+                    </p>
+                </div>
+            </td>
+        </tr>
+        <hr>
+        <tr>
+            <td>
+                <div id="drill_Press" class="tool">
+                    <img id="drill_Press_Picture" src="Drill Press.webp">
+                    <p id="popupDrillPress" class="popup">Drill Press</p>
+                    <p id="DrillPress"><span id="span5">The drill press is a machine used for making holes in hard surfaces such as wood and plastic.
+                        The drill is held in a rotating spindle and is fed into the work piece.<br><br>
+                        <span id="span6">When</span> drilling deep holes withdraw the drill often to prevent burning and damaging to the drill.
+                        To prevent hand injuries, secure the work piece to the table.
+                        Always use scrap piece of wood under the work to prevent damage to the drill press table and always brush the table with a shop brush.
+                        Secure the drill bit in the chuck by placing the chuck key in one of the three holes and twisting firmly.
+                        For a better finished cut, locate the center of a hole to be drilled with an X.
+                    </span></p>
+                </div>
+            </td>
+            <td>
+                <div id="oscillating_Spindle_Sanders" class="tool">
+                    <img id="oscillating_Spindle_Sanders_Picture" src="spindle.png">
+                    <p id="popupOscillatingSpindleSander" class="popup">Oscillating Spindle Sander</p>
+                    <p id="OSS">
+                        <span id="span7">An</span> oscillating spindle sander or OSS for short is used for sanding curves. 
+                        An OSS is a machine which consists of a tabletop witch a sanding drum sticking out through a hole in the top of the table.
+                        The drum is covered with abrasive sleeve, while also rotating and moving up and down.<br><br>
+                        <span id="span8">Never</span> try to sand metal as it could start a fire and don't leave the machine unless it has come to a complete stop.
+                        When sanding, sand against the direction the spindle is spinning.
+                        Do not leave the machine until it has come to a complete stop.
+                    </p>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <script>
+        $(function(){
+            $("#popupBandSaw").hide()
+            $("#band_Saw_Picture").click(function() {
+                $("#popupBandSaw").slideToggle(150)
+            })
+            $("#popupDiscSander").hide()
+            $("#disc_Sander_Picture").click(function() {
+                $("#popupDiscSander").slideToggle(200)
+        })
+            $("#popupDrillPress").hide()
+            $("#drill_Press_Picture").click(function() {
+                $("#popupDrillPress").slideToggle(200)
+        })
+        $("#popupOscillatingSpindleSander").hide()
+            $("#oscillating_Spindle_Sanders_Picture").click(function() {
+                $("#popupOscillatingSpindleSander").slideToggle(200)
+        })
+    })
+    </script>
+</body>
+</html>

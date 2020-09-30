@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps</title>
+    <link rel="stylesheet" href="bbqSteps.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <a class="menu" href="index1.html">Home</a>
+        <a class="menu" href="bbq.html">BBQ Scraper</a>
+        <a class="menu" href="tools.html">Tools/Safety</a>
+        <a class="menu" href="#">Final Design</a>
+    </div>
+    <div id="materials">
+    <h3>Materials and hand tools: </h3>
+    <p>
+    6'' by 2'' by 1'' wooden piece,<br>
+    file,<br>
+    sand paper,<br>
+    paper
+    </p>
+</div>
+    <h1>BBQ Scraper</h1>
+    <h2>Steps</h2>
+    <p id="opening">There are multiple steps that I took to create the barbeque scraper, which include both planning and execution steps.</p>
+    <ol>
+        <li>Research</li><span>The first step in creating the bbq scraper is researching and figuring out what type of barbeque grill scraper you want. (handle, size, roundness, etc). Look at other examples to get an idea for what you want yours to look like.</span>
+        <li>Sketchup</li><span>The second step you have to take in creating the scraper is drawing a 3d version of the barbeque scraper on sketchup.
+             SketchUp is a 3D modeling computer program for a wide range of drawing applications such as architectural, interior design, and landscape architecture, but can also be used for many more applications.
+            This is how my design looks on SketchUp.<span id="small"><a href="https://edu.sketchup.com/app/">(SketchUp site) </a></span></span>
+        <p><img id="image" src="1.png"
+            width="600px" height="450px">
+            <button class="button" id="previous" onclick="previousPicture(); showPicture();">&#60;</button>
+            <button id="meas" class="button" onclick="change(); showPicture()">measurement</button>
+            <button class="button" id="next" onclick="nextPicture(); showPicture()">&#62;</button></p>
+        <li>Drawing On paper</li><span>The third step you have to take is drawing a real-life size diagram of your barbeque scraper on a long piece of paper.
+            It is very important to be very precise with your measurement because a small mistake could decrease the efficiency of your woodworking project.
+            <p><img src="BBQDrawing.jpg" class="drawing"></p></span>
+        <li>Drawing on wood</li><span>After finishing drawing the diagram onto your paper, it is time to copy it onto the wood.</span>
+        <p><img src="woodBBQ.jpg" class="drawing"></p>
+        <li>Tools & machines</li><span>Now it is time to start cutting and using the machines. The first machine I used was the band saw.
+            <span id="tiny"><a href="tools.html">click here to read about it</a></span>
+            To use the band saw stand in front of the machine, never on the side, put your wood flat on the table, and keep your hands at least 50mm away from the blade.
+            Then, start the machine and slowly push your wood through the blade, always cut on the waste side and never make sharp turns.
+            If sharp turns are needed, do something called a relief cut.
+            A relief cut is when you make two or more cuts from different angle to cut a piece of the wood off.
+            <p><img src="relief.png"></p>
+            If you made a cut always turn off your machine before taking your piece of wood out of the blade as it can hurt the blade and ruin your work.
+            And always use a wooden stick to remove scrap pieces of wood of the table to reduce chance of injury.
+        </span><br><br>
+        <span>
+            Than take your woodwork over to the Oscillating Spindle Sander, which we will use to round out the curves and remove the last little bit of waste.
+            When using the oscillating spindle sander, turn on the machine and slowly push your wood onto the sander. Don't push too hard, let the machine do the work.
+            Than the machine will start to gradually remove the outer layer of the wood from the direction you pushed it.
+            Continue until satisfaction and then turn of the machine.
+        </span><br><br>
+        <span>
+            Next head over to the file, where you will use the tool to remove and straighten any waste beside corners and sides.
+            When using the file, hold the tool by the handle and "scrape" the flat side wherever you need to.
+            <p><img src="file.webp"></p>
+        </span>
+        <span>
+            After the file, head over to the sand paper.
+            Take a small scrap piece of wood and wrap the sand paper around it.
+            than scrape the sand paper on the sides of the project to smooth it out and to remove the last layer of waste.
+            <p><img src="sand.webp"></p>
+        </span>
+        <span>
+            This how your project should look up to now.
+            <p><img src="almostComplete.jpg" class="drawing"></p>
+        </span>
+    </ol>
+    <script>
+        var measurement = false;
+        function change(){
+            if (measurement){
+                measurement = false
+            } else {
+                measurement = true;
+            }
+        }
+        var i = 0;
+        var j = 8                                                                    
+            var imgList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+            function nextPicture(){
+                i++;
+                j++
+                if (j == 16){
+                    j = 8
+                }
+            if (i == 8){
+                i = 0;
+            }
+            }
+            function previousPicture(){
+                i--;
+                j--;
+            if (i < 0){
+                i = 7;
+            }
+            if (j < 8){
+                j = 15
+            }
+            }
+            function showPicture(){
+                if (measurement){
+                    document.getElementById("image").src =imgList[j] + ".png"                    
+                } else {
+                    document.getElementById("image").src =imgList[i] + ".png"
+                }
+                    document.getElementById("image").style.opacity = 0.5;                
+                    setTimeout(() => {
+                        document.getElementById("image").style.opacity = 0.6;
+                    }, 150);                    
+                    setTimeout(() => {
+                        document.getElementById("image").style.opacity = 0.7;
+                    }, 150);                    
+                    setTimeout(() => {
+                        document.getElementById("image").style.opacity = 0.8;
+                    }, 150);                    
+                    setTimeout(() => {
+                        document.getElementById("image").style.opacity = 1;
+                    }, 150);
+                }
+                window.addEventListener('keyup', function(event) {
+  if (event.keyCode === 37) {
+    previousPicture();
+    showPicture();
+
+  } else if (event.keyCode == 39){
+      nextPicture();
+      showPicture()
+  }
+});
+    </script>
+</body>
+</html>
